@@ -1,0 +1,10 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = calamares-xivastudio
+
+[Action]
+Description = Configurations calamares
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/calamares-xivastudio
