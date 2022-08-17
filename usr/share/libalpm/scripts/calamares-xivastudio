@@ -21,4 +21,5 @@ sed -i 's/big-welcome.png/xiva-welcome.png/' /usr/share/calamares/branding/bigli
 #troca logo do BBV calamares
 sed -i 's/logo.svg/logo-xiva.svg/' /usr/share/bigbashview/bcc/apps/bigbashview-calamares/index.sh.htm
 
-
+#trocar icone do instalador calamares
+sed -i 's/big/xiva/' /usr/share/applications/calamares-biglinux.desktop
