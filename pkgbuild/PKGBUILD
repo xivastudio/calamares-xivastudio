@@ -6,7 +6,7 @@ license=('GPL')
 depends=('calamares-biglinux')
 url="https://github.com/gitbarnabedikartola/calamares-xivastudio"
 pkgdesc="Changes on Calamares"
-source=("git+https://github.com/gitbarnabedikartola/calamares-xivastudio.git")
+source=("git+https://github.com/gitbarnabedikartola/calamares-xivastudio")
 md5sums=(SKIP)
 install=post.install
 
