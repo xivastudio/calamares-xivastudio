@@ -4,9 +4,9 @@ pkgrel=1
 arch=('any')
 license=('GPL')
 depends=('calamares-biglinux')
-url="https://github.com/xiva-studio/calamares-xivastudio/"
+url="https://github.com/xivastudio/calamares-xivastudio/"
 pkgdesc="Changes on Calamares"
-source=("git+https://github.com/xiva-studio/calamares-xivastudio/")
+source=("git+https://github.com/xivastudio/calamares-xivastudio/")
 md5sums=(SKIP)
 install=post.install
 

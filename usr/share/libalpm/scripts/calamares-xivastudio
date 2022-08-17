@@ -1,17 +1,24 @@
 #!/bin/sh
 
 sed -i 's/misolabel=biglinux/misolabel=xivastudio/' /usr/bin/grub-fix.sh
+#troca titulo janela BBV
 sed -i 's/Instalar o BigLinux/Instalar o XIVAStudio/' /usr/bin/calamares-biglinux
-sed -i 's/https\:\/\/www.biglinux.com.br/https\:\/\/www.xivastudio.org/'  /usr/share/calamares/branding/biglinux/branding.desc
+sed -i 's/Instalar o BigLinux/Instalar o XIVAStudio/' /usr/bin/calamares
+# sed -i 's/https\:\/\/www.biglinux.com.br/https\:\/\/www.xivastudio.org/'  /usr/share/calamares/branding/biglinux/branding.desc
+#troca nome na 1º tela
 sed -i 's/BigLinux/XIVAStudio/' /usr/share/calamares/branding/biglinux/branding.desc
-sed -i 's/biglinux/biglinux/' /usr/share/calamares/branding/biglinux/branding.desc
-sed -i 's/big/xiva/' /usr/share/calamares/branding/biglinux/branding.desc
+#troca logo cantinho da primeira tela do calamares
+rm /usr/share/calamares/branding/biglinux/logo.png
+mv /usr/share/calamares/branding/biglinux/logo-xiva.png  /usr/share/calamares/branding/biglinux/logo.png
+#troca logo do centro
+sed -i 's/big-welcome.png/xiva-welcome.png/' /usr/share/calamares/branding/biglinux/branding.desc
+
+
+# sed -i 's/biglinux/xivastudio/' /usr/share/calamares/branding/biglinux/branding.desc
+# sed -i 's/big/xiva/' /usr/share/calamares/branding/biglinux/branding.desc
 
 
 #troca logo do BBV calamares
 sed -i 's/logo.svg/logo-xiva.svg/' /usr/share/bigbashview/bcc/apps/bigbashview-calamares/index.sh.htm
 
 
-#troca da primeira tela do calamares
-rm /usr/share/calamares/branding/biglinux/logo.png
-mv /usr/share/calamares/branding/biglinux/logo-xiva.png  /usr/share/calamares/branding/biglinux/logo.png
