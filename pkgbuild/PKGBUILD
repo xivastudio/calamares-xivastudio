@@ -1,15 +1,15 @@
 pkgname=calamares-xivastudio
-pkgver=1.00
-pkgrel=3
+pkgver=$(date +%y.%m.%d)
+pkgrel=$(date +%H%M)
 arch=('any')
 license=('GPL')
 depends=('calamares-biglinux')
-url="https://github.com/xivastudio/calamares-xivastudio/"
+url="https://github.com/xivastudio/$pkgname"
 pkgdesc="Changes on Calamares"
-source=("git+https://github.com/xivastudio/calamares-xivastudio/")
+source=("git+https://github.com/xivastudio/$pkgname.git")
 md5sums=(SKIP)
 install=post.install
 
 package() {
-    cp -r "${srcdir}/calamares-xivastudio/usr/" "${pkgdir}/"
+    cp -r "${srcdir}/$pkgname/usr/" "${pkgdir}/"
 }
