@@ -23,3 +23,14 @@ sed -i 's/logo.svg/logo-xiva.svg/' /usr/share/bigbashview/bcc/apps/bigbashview-c
 
 #trocar icone do instalador calamares
 sed -i 's/big/xiva/' /usr/share/applications/calamares-biglinux.desktop
+
+#troca slide
+cd /usr/share/calamares/branding/biglinux/en
+mv 00-xiva.png 00.jpg
+mv 04-xiva.png 04.jpg
+cd /usr/share/calamares/branding/biglinux/es
+mv 00-xiva.png 00.jpg
+mv 04-xiva.png 04.jpg
+cd /usr/share/calamares/branding/biglinux/pt
+mv 00-xiva.png 00.jpg
+mv 04-xiva.png 04.jpg
