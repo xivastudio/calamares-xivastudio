@@ -1,9 +1,10 @@
 #!/bin/sh
 
-sed -i 's/misolabel=biglinux/misolabel=xivastudio/' /usr/bin/grub-fix.sh
+sed -i 's/misolabel=BIGLINUXLIVE/misolabel=XIVAStudio/' /usr/bin/grub-fix.sh
 #troca titulo janela BBV
-sed -i 's/Instalar o BigLinux/Instalar o XIVAStudio/' /usr/bin/calamares-biglinux
-sed -i 's/Instalar o BigLinux/Instalar o XIVAStudio/' /usr/bin/calamares
+# # sed -i 's/Instalar o BigLinux/Instalar o XIVAStudio/' /usr/bin/calamares-biglinux
+sed -i 's/BigLinux/XIVAStudio/' /usr/bin/calamares-biglinux
+# # sed -i 's/Instalar o BigLinux/Instalar o XIVAStudio/' /usr/bin/calamares
 # sed -i 's/https\:\/\/www.biglinux.com.br/https\:\/\/www.xivastudio.org/'  /usr/share/calamares/branding/biglinux/branding.desc
 #troca nome na 1º tela
 sed -i 's/BigLinux/XIVAStudio/' /usr/share/calamares/branding/biglinux/branding.desc
@@ -11,26 +12,32 @@ sed -i 's/BigLinux/XIVAStudio/' /usr/share/calamares/branding/biglinux/branding.
 # rm /usr/share/calamares/branding/biglinux/logo.png
 cp /usr/share/calamares/branding/biglinux/logo-xiva.png  /usr/share/calamares/branding/biglinux/logo.png
 #troca logo do centro
-sed -i 's/big-welcome.png/xiva-welcome.png/' /usr/share/calamares/branding/biglinux/branding.desc
-
+sed -i 's/big-welcome.svg/xiva-welcome.svg/' /usr/share/calamares/branding/biglinux/branding.desc
+sed -i 's/logo.svg/logo-xiva.svg/' /usr/share/calamares/branding/biglinux/calamares-sidebar.qml
 
 # sed -i 's/biglinux/xivastudio/' /usr/share/calamares/branding/biglinux/branding.desc
 # sed -i 's/big/xiva/' /usr/share/calamares/branding/biglinux/branding.desc
 
 
 #troca logo do BBV calamares
-sed -i 's/logo.svg/logo-xiva.svg/' /usr/share/bigbashview/bcc/apps/bigbashview-calamares/index.sh.htm
+# # sed -i 's/logo.svg/logo-xiva.svg/' /usr/share/bigbashview/bcc/apps/bigbashview-calamares/index.sh.htm
 
 #trocar icone do instalador calamares
 sed -i 's/big/xiva/' /usr/share/applications/calamares-biglinux.desktop
 
-#troca slide
-cd /usr/share/calamares/branding/biglinux/en
-mv 00-xiva.png 00.jpg
-mv 04-xiva.png 04.jpg
-cd /usr/share/calamares/branding/biglinux/es
-mv 00-xiva.png 00.jpg
-mv 04-xiva.png 04.jpg
-cd /usr/share/calamares/branding/biglinux/pt
-mv 00-xiva.png 00.jpg
-mv 04-xiva.png 04.jpg
+# #troca slide
+# cd /usr/share/calamares/branding/biglinux/en
+# rm 00.jpg
+# mv 00-xiva.jpg 00.jpg
+# rm 04.jpg
+# mv 04-xiva.jpg 04.jpg
+# cd /usr/share/calamares/branding/biglinux/es
+# rm 00.jpg
+# mv 00-xiva.jpg 00.jpg
+# rm 04.jpg
+# mv 04-xiva.jpg 04.jpg
+# cd /usr/share/calamares/branding/biglinux/pt
+# rm 00.jpg
+# mv 00-xiva.jpg 00.jpg
+# rm 04.jpg
+# mv 04-xiva.jpg 04.jpg
