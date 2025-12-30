@@ -41,3 +41,4 @@ sed -i 's/big/xiva/' /usr/share/applications/com.biglinux.calamares-config.deskt
 # mv 00-xiva.jpg 00.jpg
 # rm 04.jpg
 # mv 04-xiva.jpg 04.jpg
+
