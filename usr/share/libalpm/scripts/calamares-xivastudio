@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sed -i 's/misolabel=BIGLINUXLIVE/misolabel=XIVAStudio/' /usr/bin/grub-fix.sh
+# sed -i 's/misolabel=BIGLINUXLIVE/misolabel=XIVAStudio/' /usr/bin/grub-fix.sh
 #troca titulo janela BBV
 # # sed -i 's/Instalar o BigLinux/Instalar o XIVAStudio/' /usr/bin/calamares-biglinux
 sed -i 's/BigLinux/XIVAStudio/' /usr/bin/calamares-biglinux
