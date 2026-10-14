@@ -6,14 +6,24 @@ sed -i 's/misolabel=BIGLINUXLIVE/misolabel=XIVAStudio/' /usr/bin/grub-fix.sh
 sed -i 's/BigLinux/XIVAStudio/' /usr/bin/calamares-biglinux
 # # sed -i 's/Instalar o BigLinux/Instalar o XIVAStudio/' /usr/bin/calamares
 # sed -i 's/https\:\/\/www.biglinux.com.br/https\:\/\/www.xivastudio.org/'  /usr/share/calamares/branding/biglinux/branding.desc
+
 #troca nome na 1º tela
-sed -i 's/BigLinux/XIVAStudio/' /usr/share/calamares/branding/biglinux/branding.desc
+#sed -i 's/BigLinux/XIVAStudio/' /usr/share/calamares/branding/biglinux/branding.desc
+sed -i 's/productUrl:.*/productUrl: https:\/\/www.xivastudio.org/' /usr/share/biglinux/calamares-profiles/xivastudio/branding/xivastudio/branding.desc
+sed -i 's/releaseNotesUrl:.*/releaseNotesUrl: https:\/\/www.xivastudio.org/' /usr/share/biglinux/calamares-profiles/xivastudio/branding/xivastudio/branding.desc
+sed -i 's/productLogo:.*/productLogo: logo-xiva.svg/' /usr/share/biglinux/calamares-profiles/xivastudio/branding/xivastudio/branding.desc
+sed -i 's/productIcon:.*/productIcon: \/usr\/share\/icons\/hicolor\/scalable\/apps\/icon-xiva-hd-install.svg/' /usr/share/biglinux/calamares-profiles/xivastudio/branding/xivastudio/branding.desc
+sed -i 's/productWelcome:.*/productWelcome: xiva-welcome.svg/' /usr/share/biglinux/calamares-profiles/xivastudio/branding/xivastudio/branding.desc
+
+
+
+
 #troca logo cantinho da primeira tela do calamares
 # rm /usr/share/calamares/branding/biglinux/logo.png
-cp /usr/share/calamares/branding/biglinux/logo-xiva.png  /usr/share/calamares/branding/biglinux/logo.png
+# cp /usr/share/calamares/branding/biglinux/logo-xiva.png  /usr/share/calamares/branding/biglinux/logo.png
 #troca logo do centro
-sed -i 's/big-welcome.svg/xiva-welcome.svg/' /usr/share/calamares/branding/biglinux/branding.desc
-sed -i 's/logo.svg/logo-xiva.svg/' /usr/share/calamares/branding/biglinux/calamares-sidebar.qml
+# sed -i 's/big-welcome.svg/xiva-welcome.svg/' /usr/share/calamares/branding/biglinux/branding.desc
+# sed -i 's/logo.svg/logo-xiva.svg/' /usr/share/calamares/branding/biglinux/calamares-sidebar.qml
 
 # sed -i 's/biglinux/xivastudio/' /usr/share/calamares/branding/biglinux/branding.desc
 # sed -i 's/big/xiva/' /usr/share/calamares/branding/biglinux/branding.desc
